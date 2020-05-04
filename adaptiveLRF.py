@@ -7,7 +7,7 @@ from sklearn.decomposition import NMF
 import matplotlib.pyplot as plt
 
 
-class LRFout(Callback):
+class AdaptiveLRF(Callback):
     def __init__(self, model, number_classes, train_input, train_target, batch_size, k=1,
                  patient=3,
                  verbose=True,
