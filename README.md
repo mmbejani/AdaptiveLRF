@@ -11,8 +11,6 @@ The constructor parameter is in the following:
 2. The number of the classes. The acceptable type is `int`.
 3. A part of the input of the train samples. The acceptable type is `numpy.ndarray`.
 4. A part of the output of the train samples. The acceptable type is `numpy.ndarray`.
-5. A part of the input of the validation samples. The acceptable type is `numpy.ndarray`.
-6. A part of the output of the validation samples. The acceptable type is `numpy.ndarray`.
 7. The batch size which the conditional analysis is done on this size of the batch. The acceptable type is `int`.
 8. The value of `k`. This value was described in the paper.
 9. The number of patients after overfitting.
@@ -23,3 +21,5 @@ model.compile(...)
 reg = AdaptiveLRF(model, 10, ...)
 model.fit(..., callbacks=[reg])
 ```
+
+Notice, you have to give the validation or test data to the `fit` function!
