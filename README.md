@@ -23,3 +23,6 @@ model.fit(..., callbacks=[reg])
 ```
 
 Notice, you have to give the validation or test data to the `fit` function!
+
+## Reference
+[1] Mohammad Mahdi Bejani and Mehdi Ghatee, Adaptive Low-Randk Factorization to Regularize Shallow and Deep Neural Networks, ArXiv, 2020
